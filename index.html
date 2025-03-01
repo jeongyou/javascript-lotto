@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <title>🎱 행운의 로또</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=close" />
+    <script type="module" crossorigin src="/javascript-lotto/assets/index-DS3mNwPw.js"></script>
+    <link rel="stylesheet" crossorigin href="/javascript-lotto/assets/index-B3iPdipP.css">
+  </head>
+
+  <body>
+    <div id="app" class="header">
+      <h1>🎱 행운의 로또</h1>
+    </div>
+    <div class="container">
+      <div class="main-contents">
+        <div class="game-title">
+          <p class="lotto-title">🎱 내 번호 당첨 확인 🎱</p>
+        </div>
+
+        <form id="purchase-form" class="input-container">
+          <div class="purchase-guide">
+            <label class="lotto-body" for="purchase-input">구입할 금액을 입력하세요.</label>
+            <input type="number" min="1000" max="100000" id="purchase-input" class="lotto-input" placeholder="금액" />
+          </div>
+          <button type="submit" class="purchase-btn">구입</button>
+        </form>
+        
+        <div class="lotto-display-container">
+          <div class="purchase-count-message">
+            <p class="lotto-body">총 <span>7</span>개를 구매하였습니다.</p>
+          </div>
+
+          <div class="lottos-container">
+            <div class="lotto-numbers">
+              <div class="lotto-numbers-container">
+                <ul class="lotto-tickets">
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="winning-lotto-container">
+            <div class="winning-lotto-massage">
+              <p class="lotto-body">지난 주 당첨번호 6개와 보너스 번호 1개를 입력해주세요.</p>
+            </div>
+            <form id="winning-lotto-form" class="winning-lotto-input">
+              <div class="winning-numbers-input">
+                <label for="winning-input" class="winning-input-title lotto-body">당첨 번호</label>
+                <div>
+                  <input type="number" id="winning-input" class="number-input">
+                  <input type="number" class="number-input">
+                  <input type="number" class="number-input">
+                  <input type="number" class="number-input">
+                  <input type="number" class="number-input">
+                  <input type="number" class="number-input">
+                </div>
+              </div>
+              <div class="bonus-number-input">
+                <label for="bonus-input" class="winning-input-title lotto-body">보너스 번호</label>
+                <div>
+                  <input type="number" id="bonus-input" class="number-input">
+                </div>
+              </div>
+            </form>
+          </div>
+
+          <button class="lotto-caption show-result-btn">결과 확인하기</button>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <p>Copyright 2023. woowacourse</p>
+    </div>
+
+    <dialog class="dialog">
+      <div class="close-btn-container">  
+        <button class="close-btn">
+          <span class="material-symbols-outlined">close</span>
+        </button>
+      </div>
+      <div class="dialog-container">
+        <div class="winning-rate-title lotto-subtitle">
+          <p>
+            🏆 당첨 통계 🏆
+          </p>
+        </div>
+        <div>
+          <table>
+            <tr>
+              <th scope="col">일치 갯수</td>
+              <th scope="col">당첨금</td>
+              <th scope="col">당첨 갯수</td>
+            </tr>
+            <tr>
+              <td>3개</td>
+              <td>5,000</td>
+              <td>n개</td>
+            </tr>
+            <tr>
+              <td>4개</td>
+              <td>50,000</td>
+              <td>n개</td>
+            </tr>
+            <tr>
+              <td>5개</td>
+              <td>1,500,000</td>
+              <td>n개</td>
+            </tr>
+            <tr>
+              <td>5개+보너스볼</td>
+              <td>30,000,000</td>
+              <td>n개</td>
+            </tr>
+            <tr>
+              <td>6개</td>
+              <td>2,000,000,000</td>
+              <td>n개</td>
+            </tr>
+          </table>
+        </div>
+        <div class="winning-rate-result">
+          <p>당신의 총 수익률은 %입니다.</p>
+        </div>
+        <button class="restart-btn lotto-caption">다시 시작하기</button>
+      </div>
+    </dialog>
+  </body>
+</html>
